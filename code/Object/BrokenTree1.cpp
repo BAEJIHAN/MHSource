@@ -1,0 +1,55 @@
+
+#include "BrokenTree1.h"
+
+CBrokenTree1::CBrokenTree1()
+{
+	SetTypeID<CBrokenTree1>();
+}
+
+CBrokenTree1::CBrokenTree1(const CBrokenTree1& obj)
+{
+	m_Mesh = (CStaticMeshComponent*)FindComponent("Mesh");
+	m_ColliderBox = (CColliderBox3D*)FindComponent("BrokenTree1Box");
+}
+
+CBrokenTree1::~CBrokenTree1()
+{
+}
+
+bool CBrokenTree1::Init()
+{
+	m_Mesh = CreateComponent<CStaticMeshComponent>("Mesh");
+	m_ColliderBox = CreateComponent<CColliderBox3D>("BrokenTree1Box");
+
+	SetRootComponent(m_Mesh);
+	m_Mesh->AddChild(m_ColliderBox);
+
+	m_ColliderBox->Set3DExtent(24.f, 26.f, 8.f);
+	m_ColliderBox->SetWorldPos(6.f, -12.f, 0.f);
+	m_ColliderBox->SetInheritRot(true);
+	m_ColliderBox->SetCollisionProfile("FieldObj");
+
+	m_Mesh->SetMesh("BrokenTree1");
+
+	m_Mesh->SetRelativeScale(0.005f, 0.005f, 0.005f);
+	m_Mesh->SetRelativePos(13.f, 0.f, 0.f);
+	m_Mesh->SetWorldRotation(-90.f, 0.f, 0.f);
+
+	return true;
+}
+
+void CBrokenTree1::Update(float DeltaTime)
+{
+	CGameObject::Update(DeltaTime);
+
+}
+
+void CBrokenTree1::PostUpdate(float DeltaTime)
+{
+	CGameObject::PostUpdate(DeltaTime);
+}
+
+CBrokenTree1* CBrokenTree1::Clone()
+{
+	return DBG_NEW CBrokenTree1(*this);
+}

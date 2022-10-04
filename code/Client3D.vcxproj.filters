@@ -1,0 +1,1593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main3D.cpp" />
+    <ClCompile Include="ClientManager3D.cpp">
+      <Filter>01. ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StartSceneMode.cpp">
+      <Filter>02. SceneMode\01. Start</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MainScene_LoadSceneFile.cpp">
+      <Filter>02. SceneMode\02. Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\MainSceneMode.cpp">
+      <Filter>02. SceneMode\02. Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Player.cpp">
+      <Filter>03. Object\01. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\PlayerAnimation.cpp">
+      <Filter>03. Object\01. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Barnos.cpp">
+      <Filter>03. Object\02. Monster\01. Barnos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BarnosAnimation.cpp">
+      <Filter>03. Object\02. Monster\01. Barnos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BarnosState.cpp">
+      <Filter>03. Object\02. Monster\01. Barnos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Jagras.cpp">
+      <Filter>03. Object\02. Monster\02. Jagras</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\JagrasAnimation.cpp">
+      <Filter>03. Object\02. Monster\02. Jagras</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\JagrasState.cpp">
+      <Filter>03. Object\02. Monster\02. Jagras</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Kestodon.cpp">
+      <Filter>03. Object\02. Monster\03. Kestodon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\KestodonAnimation.cpp">
+      <Filter>03. Object\02. Monster\03. Kestodon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\KestodonState.cpp">
+      <Filter>03. Object\02. Monster\03. Kestodon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Vespoid.cpp">
+      <Filter>03. Object\02. Monster\04. Vespoid</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\VespoidAnimation.cpp">
+      <Filter>03. Object\02. Monster\04. Vespoid</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\VespoidState.cpp">
+      <Filter>03. Object\02. Monster\04. Vespoid</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Anjanath.cpp">
+      <Filter>03. Object\03. Boss\01. Anjanath</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\AnjanathAnimation.cpp">
+      <Filter>03. Object\03. Boss\01. Anjanath</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\AnjanathTail.cpp">
+      <Filter>03. Object\03. Boss\01. Anjanath</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Rathalos.cpp">
+      <Filter>03. Object\03. Boss\02. Rathalos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\RathalosAnimation.cpp">
+      <Filter>03. Object\03. Boss\02. Rathalos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\RathalosTail.cpp">
+      <Filter>03. Object\03. Boss\02. Rathalos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FieldObj.cpp">
+      <Filter>03. Object\04. Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FlightCamera.cpp">
+      <Filter>03. Object\06. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Bow.cpp">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BowBox.cpp">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Weapon.cpp">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WeaponAnimation.cpp">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Arrow.cpp">
+      <Filter>03. Object\07. Weapon\01. Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DragonArrow.cpp">
+      <Filter>03. Object\07. Weapon\01. Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BowVfx.cpp">
+      <Filter>03. Object\07. Weapon\02. Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ChargingParticle.cpp">
+      <Filter>03. Object\07. Weapon\03. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ArrowExplosionEffect.cpp">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ArrowHitEffect.cpp">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ArrowSmokeEffect.cpp">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ArrowStrongEffect.cpp">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FlameEffect.cpp">
+      <Filter>03. Object\08. Billboard\02. Flame</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\LandScapeObj.cpp">
+      <Filter>03. Object\09. LandScape</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ExplainWindow.cpp">
+      <Filter>04. UI\01. Window</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ChargingJoomMouse.cpp">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ClickMouse.cpp">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\JoomMouse.cpp">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\NormalMouse.cpp">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\StartWindow.cpp">
+      <Filter>04. UI\01. Window\02. Start</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\PlayerHUD.cpp">
+      <Filter>04. UI\01. Window\03. Main\01. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ESCWindow.cpp">
+      <Filter>04. UI\01. Window\03. Main\02. ESC</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\OptionWindow.cpp">
+      <Filter>04. UI\01. Window\03. Main\02. ESC\01. Option</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Minimap.cpp">
+      <Filter>04. UI\01. Window\03. Main\03. Minimap\01. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MinimapWindow.cpp">
+      <Filter>04. UI\01. Window\03. Main\03. Minimap</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\DebugWindow.cpp">
+      <Filter>04. UI\01. Window\04. Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\LoadingWindow.cpp">
+      <Filter>04. UI\01. Window\05. Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Monster.cpp">
+      <Filter>03. Object\02. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MainWindow.cpp">
+      <Filter>04. UI\01. Window\03. Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HealEffect.cpp">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ParticleAnimation.cpp">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ArrowLightEffect.cpp">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\BottleSlotWindow.cpp">
+      <Filter>04. UI\01. Window\03. Main\01. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\DamageFont.cpp">
+      <Filter>04. UI\01. Window\03. Main\04. Damage</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CarvingRightWindow.cpp">
+      <Filter>04. UI\01. Window\03. Main\05. Carving</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CarvingWindow.cpp">
+      <Filter>04. UI\01. Window\03. Main\05. Carving</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TargetingCamera.cpp">
+      <Filter>03. Object\06. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\EventManager.cpp">
+      <Filter>05. Manager\01. Event</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\HDRWindow.cpp">
+      <Filter>04. UI\01. Window\06. HDR</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\RockFractalParticle.cpp">
+      <Filter>03. Object\08. Billboard\03. Fractal</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmokeEffect.cpp">
+      <Filter>03. Object\08. Billboard\04. Smoke</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FireEffect.cpp">
+      <Filter>03. Object\08. Billboard\05. Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BurnedDecal.cpp">
+      <Filter>03. Object\10. Decal</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SparkEffect.cpp">
+      <Filter>03. Object\08. Billboard\06. Spark</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ExplosionEffect.cpp">
+      <Filter>03. Object\08. Billboard\07. Explosion</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Mernos.cpp">
+      <Filter>03. Object\02. Monster\05. Mernos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MernosAnimation.cpp">
+      <Filter>03. Object\02. Monster\05. Mernos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MernosState.cpp">
+      <Filter>03. Object\02. Monster\05. Mernos</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TestObj.cpp">
+      <Filter>03. Object\02. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HitBreathEffect.cpp">
+      <Filter>03. Object\08. Billboard\05. Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NormalArrowBillboard.cpp">
+      <Filter>03. Object\07. Weapon\04. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NormalArrowParticle.cpp">
+      <Filter>03. Object\07. Weapon\03. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StrongArrowParticle.cpp">
+      <Filter>03. Object\07. Weapon\03. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HitBreathEffect.cpp">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\NormalArrowParticle.cpp">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StrongArrowParticle.cpp">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\GreySlider.cpp">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\WhiteSlider.cpp">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\BloomScaleSlider.cpp">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\BloomThresholdSlider.cpp">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\FarStartSlider.cpp">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\NearStartSlider.cpp">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HealFlower.cpp">
+      <Filter>03. Object\04. Field\Global\01. HealFlower</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmallTree1.cpp">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmallTree2.cpp">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree1.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree2.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree3.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree4.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree5.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree6.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree7.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BigTree.cpp">
+      <Filter>03. Object\04. Field\1Stage\03. BigTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BrokenTree1.cpp">
+      <Filter>03. Object\04. Field\1Stage\04. BrokenTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BrokenTree2.cpp">
+      <Filter>03. Object\04. Field\1Stage\04. BrokenTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MushRoom1.cpp">
+      <Filter>03. Object\04. Field\1Stage\05. Mushroom</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MushRoom2.cpp">
+      <Filter>03. Object\04. Field\1Stage\05. Mushroom</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass1.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass2.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass3.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Vine.cpp">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Precipice.cpp">
+      <Filter>03. Object\04. Field\1Stage\08. Precipice</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Sculpture.cpp">
+      <Filter>03. Object\04. Field\1Stage\09. Sculpture</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertPebble.cpp">
+      <Filter>03. Object\04. Field\2Stage\01. DesertPebble</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertSmallStone.cpp">
+      <Filter>03. Object\04. Field\2Stage\02. DesertSmallStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStone1.cpp">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStone2.cpp">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStone3.cpp">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStone4.cpp">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStone5.cpp">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStone6.cpp">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertBigStone.cpp">
+      <Filter>03. Object\04. Field\2Stage\04. DesertBigStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertRockWall.cpp">
+      <Filter>03. Object\04. Field\2Stage\05. DesertRockWall</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStalactite1.cpp">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStalactite2.cpp">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStalactite3.cpp">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStalactite4.cpp">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStalagmite1.cpp">
+      <Filter>03. Object\04. Field\2Stage\07. DesertStalagmite</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStalagmite2.cpp">
+      <Filter>03. Object\04. Field\2Stage\07. DesertStalagmite</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertStalagmite3.cpp">
+      <Filter>03. Object\04. Field\2Stage\07. DesertStalagmite</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\LoadingSceneMode.cpp">
+      <Filter>02. SceneMode\03. Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\LoadingThread.cpp">
+      <Filter>02. SceneMode\03. Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\QuestSubWindow1.cpp">
+      <Filter>04. UI\01. Window\07. Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\QuestSubWindow2.cpp">
+      <Filter>04. UI\01. Window\07. Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\QuestWindow.cpp">
+      <Filter>04. UI\01. Window\07. Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock1.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock2.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock3.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock4.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock5.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock6.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock7.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock8.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassRock9.cpp">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tent1.cpp">
+      <Filter>03. Object\04. Field\Global\02. Tent</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tent2.cpp">
+      <Filter>03. Object\04. Field\Global\02. Tent</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Box1.cpp">
+      <Filter>03. Object\04. Field\03. Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree8.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree9.cpp">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BrokenTree3.cpp">
+      <Filter>03. Object\04. Field\1Stage\04. BrokenTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Vine2.cpp">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Vine3.cpp">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Vine4.cpp">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Vine5.cpp">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmallTree3.cpp">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmallTree4.cpp">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmallTree5.cpp">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmallStone1.cpp">
+      <Filter>03. Object\04. Field\1Stage\10. SmallStone</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Wreck1.cpp">
+      <Filter>03. Object\04. Field\1Stage\12. Wreck</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass4.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass5.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass6.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass7.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass8.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass9.cpp">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MushRoom3.cpp">
+      <Filter>03. Object\04. Field\1Stage\05. Mushroom</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Precipice2.cpp">
+      <Filter>03. Object\04. Field\1Stage\08. Precipice</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SmallGrass.cpp">
+      <Filter>03. Object\04. Field\1Stage\13. SmallGrass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Far.cpp">
+      <Filter>03. Object\04. Field\1Stage\14. Far</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej1.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej2.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej3.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej4.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej5.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej6.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej7.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej8.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej9.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej10.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej11.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej12.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej13.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej14.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej15.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej16.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej17.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej18.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej19.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej20.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej21.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej22.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej23.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej24.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej25.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej26.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej27.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej28.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej29.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej30.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej31.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej32.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej33.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej34.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej35.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej36.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stonej\Stonej37.cpp">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\HealObject.cpp">
+      <Filter>03. Object\04. Field\Global\03. HealObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SlidingBox.cpp">
+      <Filter>03. Object\04. Field\Global\04. SlidingBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownCarriage.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownCheckPoint.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownDragonHead.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownPassage.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownPumpkinMan.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownRampart.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownShadeScreen.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownSign.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownStructure.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownSummerHouse.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownTunnel.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TownBarrel.cpp">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertMountain2.cpp">
+      <Filter>03. Object\04. Field\2Stage\08. DesertMountain</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\DesertMountain1.cpp">
+      <Filter>03. Object\04. Field\2Stage\08. DesertMountain</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TownSceneMode.cpp">
+      <Filter>02. SceneMode\04. Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TownScene_LoadSceneFile.cpp">
+      <Filter>02. SceneMode\04. Town</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\ObjectManager.cpp">
+      <Filter>05. Manager\02. Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client3D.h" />
+    <ClInclude Include="ClientManager3D.h">
+      <Filter>01. ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StartSceneMode.h">
+      <Filter>02. SceneMode\01. Start</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MainSceneMode.h">
+      <Filter>02. SceneMode\02. Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Player.h">
+      <Filter>03. Object\01. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\PlayerAnimation.h">
+      <Filter>03. Object\01. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Barnos.h">
+      <Filter>03. Object\02. Monster\01. Barnos</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BarnosAnimation.h">
+      <Filter>03. Object\02. Monster\01. Barnos</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Jagras.h">
+      <Filter>03. Object\02. Monster\02. Jagras</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\JagrasAnimation.h">
+      <Filter>03. Object\02. Monster\02. Jagras</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Kestodon.h">
+      <Filter>03. Object\02. Monster\03. Kestodon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\KestodonAnimation.h">
+      <Filter>03. Object\02. Monster\03. Kestodon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Vespoid.h">
+      <Filter>03. Object\02. Monster\04. Vespoid</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\VespoidAnimation.h">
+      <Filter>03. Object\02. Monster\04. Vespoid</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Monster.h">
+      <Filter>03. Object\02. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FSM.h">
+      <Filter>03. Object\05. FSM</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Anjanath.h">
+      <Filter>03. Object\03. Boss\01. Anjanath</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\AnjanathAnimation.h">
+      <Filter>03. Object\03. Boss\01. Anjanath</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\AnjanathTail.h">
+      <Filter>03. Object\03. Boss\01. Anjanath</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Rathalos.h">
+      <Filter>03. Object\03. Boss\02. Rathalos</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\RathalosAnimation.h">
+      <Filter>03. Object\03. Boss\02. Rathalos</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\RathalosTail.h">
+      <Filter>03. Object\03. Boss\02. Rathalos</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FieldObj.h">
+      <Filter>03. Object\04. Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FlightCamera.h">
+      <Filter>03. Object\06. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Bow.h">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BowBox.h">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Weapon.h">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WeaponAnimation.h">
+      <Filter>03. Object\07. Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Arrow.h">
+      <Filter>03. Object\07. Weapon\01. Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DragonArrow.h">
+      <Filter>03. Object\07. Weapon\01. Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BowVfx.h">
+      <Filter>03. Object\07. Weapon\02. Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ChargingParticle.h">
+      <Filter>03. Object\07. Weapon\03. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ArrowExplosionEffect.h">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ArrowHitEffect.h">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ArrowSmokeEffect.h">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ArrowStrongEffect.h">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FlameEffect.h">
+      <Filter>03. Object\08. Billboard\02. Flame</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\LandScapeObj.h">
+      <Filter>03. Object\09. LandScape</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ExplainWindow.h">
+      <Filter>04. UI\01. Window</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ChargingJoomMouse.h">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ClickMouse.h">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\JoomMouse.h">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\NormalMouse.h">
+      <Filter>04. UI\01. Window\01. Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\StartWindow.h">
+      <Filter>04. UI\01. Window\02. Start</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\PlayerHUD.h">
+      <Filter>04. UI\01. Window\03. Main\01. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ESCWindow.h">
+      <Filter>04. UI\01. Window\03. Main\02. ESC</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\OptionWindow.h">
+      <Filter>04. UI\01. Window\03. Main\02. ESC\01. Option</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Minimap.h">
+      <Filter>04. UI\01. Window\03. Main\03. Minimap\01. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MinimapWindow.h">
+      <Filter>04. UI\01. Window\03. Main\03. Minimap</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\DebugWindow.h">
+      <Filter>04. UI\01. Window\04. Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\LoadingWindow.h">
+      <Filter>04. UI\01. Window\05. Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MainWindow.h">
+      <Filter>04. UI\01. Window\03. Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HealEffect.h">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ParticleAnimation.h">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ArrowLightEffect.h">
+      <Filter>03. Object\08. Billboard\01. Arrow</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BottleSlotWindow.h">
+      <Filter>04. UI\01. Window\03. Main\01. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\DamageFont.h">
+      <Filter>04. UI\01. Window\03. Main\04. Damage</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CarvingRightWindow.h">
+      <Filter>04. UI\01. Window\03. Main\05. Carving</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CarvingWindow.h">
+      <Filter>04. UI\01. Window\03. Main\05. Carving</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TargetingCamera.h">
+      <Filter>03. Object\06. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\EventManager.h">
+      <Filter>05. Manager\01. Event</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\HDRWindow.h">
+      <Filter>04. UI\01. Window\06. HDR</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\RockFractalParticle.h">
+      <Filter>03. Object\08. Billboard\03. Fractal</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmokeEffect.h">
+      <Filter>03. Object\08. Billboard\04. Smoke</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FireEffect.h">
+      <Filter>03. Object\08. Billboard\05. Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BurnedDecal.h">
+      <Filter>03. Object\10. Decal</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SparkEffect.h">
+      <Filter>03. Object\08. Billboard\06. Spark</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ExplosionEffect.h">
+      <Filter>03. Object\08. Billboard\07. Explosion</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Mernos.h">
+      <Filter>03. Object\02. Monster\05. Mernos</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MernosAnimation.h">
+      <Filter>03. Object\02. Monster\05. Mernos</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TestObj.h">
+      <Filter>03. Object\02. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HitBreathEffect.h">
+      <Filter>03. Object\08. Billboard\05. Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NormalArrowBillboard.h">
+      <Filter>03. Object\07. Weapon\04. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NormalArrowParticle.h">
+      <Filter>03. Object\07. Weapon\03. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StrongArrowParticle.h">
+      <Filter>03. Object\07. Weapon\03. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HitBreathEffect.h">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\NormalArrowParticle.h">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StrongArrowParticle.h">
+      <Filter>03. Object\08. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\GreySlider.h">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\WhiteSlider.h">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BloomScaleSlider.h">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\BloomThresholdSlider.h">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\FarStartSlider.h">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\NearStartSlider.h">
+      <Filter>04. UI\01. Window\06. HDR\01. Slider</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HealFlower.h">
+      <Filter>03. Object\04. Field\Global\01. HealFlower</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmallTree1.h">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmallTree2.h">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree1.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree2.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree3.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree4.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree5.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree6.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree7.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BigTree.h">
+      <Filter>03. Object\04. Field\1Stage\03. BigTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BrokenTree1.h">
+      <Filter>03. Object\04. Field\1Stage\04. BrokenTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BrokenTree2.h">
+      <Filter>03. Object\04. Field\1Stage\04. BrokenTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MushRoom1.h">
+      <Filter>03. Object\04. Field\1Stage\05. Mushroom</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MushRoom2.h">
+      <Filter>03. Object\04. Field\1Stage\05. Mushroom</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass1.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass2.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass3.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Vine.h">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Precipice.h">
+      <Filter>03. Object\04. Field\1Stage\08. Precipice</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Sculpture.h">
+      <Filter>03. Object\04. Field\1Stage\09. Sculpture</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertPebble.h">
+      <Filter>03. Object\04. Field\2Stage\01. DesertPebble</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertSmallStone.h">
+      <Filter>03. Object\04. Field\2Stage\02. DesertSmallStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStone1.h">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStone2.h">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStone3.h">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStone4.h">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStone5.h">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStone6.h">
+      <Filter>03. Object\04. Field\2Stage\03. DesertStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertBigStone.h">
+      <Filter>03. Object\04. Field\2Stage\04. DesertBigStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertRockWall.h">
+      <Filter>03. Object\04. Field\2Stage\05. DesertRockWall</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStalactite1.h">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStalactite2.h">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStalactite3.h">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStalactite4.h">
+      <Filter>03. Object\04. Field\2Stage\06. DesertStalactite</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStalagmite1.h">
+      <Filter>03. Object\04. Field\2Stage\07. DesertStalagmite</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStalagmite2.h">
+      <Filter>03. Object\04. Field\2Stage\07. DesertStalagmite</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertStalagmite3.h">
+      <Filter>03. Object\04. Field\2Stage\07. DesertStalagmite</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\LoadingSceneMode.h">
+      <Filter>02. SceneMode\03. Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\LoadingThread.h">
+      <Filter>02. SceneMode\03. Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\QuestSubWindow1.h">
+      <Filter>04. UI\01. Window\07. Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\QuestSubWindow2.h">
+      <Filter>04. UI\01. Window\07. Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\QuestWindow.h">
+      <Filter>04. UI\01. Window\07. Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock1.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock2.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock3.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock4.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock5.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock6.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock7.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock8.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassRock9.h">
+      <Filter>03. Object\04. Field\1Stage\11. GrassRock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tent1.h">
+      <Filter>03. Object\04. Field\Global\02. Tent</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tent2.h">
+      <Filter>03. Object\04. Field\Global\02. Tent</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Box1.h">
+      <Filter>03. Object\04. Field\03. Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree8.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree9.h">
+      <Filter>03. Object\04. Field\1Stage\02. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BrokenTree3.h">
+      <Filter>03. Object\04. Field\1Stage\04. BrokenTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Vine2.h">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Vine3.h">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Vine4.h">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Vine5.h">
+      <Filter>03. Object\04. Field\1Stage\07. Vine</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmallTree3.h">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmallTree4.h">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmallTree5.h">
+      <Filter>03. Object\04. Field\1Stage\01. SmallTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmallStone1.h">
+      <Filter>03. Object\04. Field\1Stage\10. SmallStone</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Wreck1.h">
+      <Filter>03. Object\04. Field\1Stage\12. Wreck</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass5.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass4.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass9.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass6.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass7.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass8.h">
+      <Filter>03. Object\04. Field\1Stage\06. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MushRoom3.h">
+      <Filter>03. Object\04. Field\1Stage\05. Mushroom</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Precipice2.h">
+      <Filter>03. Object\04. Field\1Stage\08. Precipice</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SmallGrass.h">
+      <Filter>03. Object\04. Field\1Stage\13. SmallGrass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Far.h">
+      <Filter>03. Object\04. Field\1Stage\14. Far</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej1.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej2.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej3.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej4.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej5.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej6.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej7.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej8.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej9.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej10.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej11.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej12.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej13.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej14.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej15.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej16.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej17.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej18.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej19.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej20.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej21.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej22.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej23.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej24.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej25.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej26.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej27.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej28.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej29.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej30.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej31.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej32.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej33.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej34.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej35.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej36.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stonej\Stonej37.h">
+      <Filter>03. Object\04. Field\Global\00. Stonej</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\HealObject.h">
+      <Filter>03. Object\04. Field\Global\03. HealObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SlidingBox.h">
+      <Filter>03. Object\04. Field\Global\04. SlidingBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownTunnel.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownCarriage.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownCheckPoint.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownDragonHead.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownPassage.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownPumpkinMan.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownRampart.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownShadeScreen.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownSign.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownStructure.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownSummerHouse.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TownBarrel.h">
+      <Filter>03. Object\04. Field\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertMountain2.h">
+      <Filter>03. Object\04. Field\2Stage\08. DesertMountain</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\DesertMountain1.h">
+      <Filter>03. Object\04. Field\2Stage\08. DesertMountain</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TownSceneMode.h">
+      <Filter>02. SceneMode\04. Town</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\ObjectManager.h">
+      <Filter>05. Manager\02. Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="01. ClientManager">
+      <UniqueIdentifier>{ec562c62-4f2d-4b30-8466-1bd241caca57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. SceneMode">
+      <UniqueIdentifier>{910c7fc9-0ea4-4c53-b5e3-bae84e36a347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object">
+      <UniqueIdentifier>{59243799-cefc-46ae-9bac-2568335290b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI">
+      <UniqueIdentifier>{ebb2dd50-ab53-4446-b7d8-e08b9f18f1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{0752ba39-fb03-47b4-8eb4-6f5d89c69897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. SceneMode\01. Start">
+      <UniqueIdentifier>{dabbf598-b2a3-40b2-b491-af6dcec391fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. SceneMode\02. Main">
+      <UniqueIdentifier>{9bf4a7f1-b730-4b6c-9e05-046428e2f2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. Player">
+      <UniqueIdentifier>{f5158f70-e679-4a6d-978b-8976b519dfd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. Monster">
+      <UniqueIdentifier>{992243da-48f8-47d9-aaa8-4d5729e7aaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\03. Boss">
+      <UniqueIdentifier>{fee08f83-72a7-45f5-9b67-01f127a07d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field">
+      <UniqueIdentifier>{68466bf8-98ca-48e3-96ec-500099e23b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\05. FSM">
+      <UniqueIdentifier>{3143a765-7555-48b2-969d-f28e9118928a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\07. Weapon">
+      <UniqueIdentifier>{ed784a6c-7a7b-41f0-8b8d-7d4f083f7e4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard">
+      <UniqueIdentifier>{da76f78d-3ca5-4669-bec3-26b3e15f6c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\09. LandScape">
+      <UniqueIdentifier>{8e676096-ecbf-4142-9407-17d0684d7ece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. Monster\01. Barnos">
+      <UniqueIdentifier>{14c50ea0-5cbf-43ec-8332-e41040ef73cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. Monster\02. Jagras">
+      <UniqueIdentifier>{713651c6-2a6c-4a9c-95a4-6a4357d1977a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. Monster\03. Kestodon">
+      <UniqueIdentifier>{c163dfe2-eace-433e-9380-b88da9a9f685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. Monster\04. Vespoid">
+      <UniqueIdentifier>{030e16ba-e374-4a72-8be6-3d0d3599e85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\03. Boss\01. Anjanath">
+      <UniqueIdentifier>{8ea57015-b08e-4a60-9911-12a32184a619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\07. Weapon\01. Arrow">
+      <UniqueIdentifier>{3c4686d2-214d-45a5-bbde-18a1cc74301e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\07. Weapon\02. Effect">
+      <UniqueIdentifier>{1f5b217e-33dd-4d3e-b82e-f41b9ddf1529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\07. Weapon\03. Particle">
+      <UniqueIdentifier>{4ba62983-9a5c-4b2d-bbae-77c14445dadf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard\01. Arrow">
+      <UniqueIdentifier>{157484b2-4963-411d-a649-aa65ffaa7ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard\02. Flame">
+      <UniqueIdentifier>{c5e50033-242c-4e26-9373-a6b9abc3377d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window">
+      <UniqueIdentifier>{5cb92222-2709-4d3a-8238-628160ec0e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\01. Mouse">
+      <UniqueIdentifier>{8cf00d9e-1cf4-4626-9ba4-e7c15a3cf660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\02. Start">
+      <UniqueIdentifier>{8c7e4aeb-0cd2-45d0-ab5a-6eda6e98506a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main">
+      <UniqueIdentifier>{7480b729-928e-4aa8-a2d7-833f194ee40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\04. Debug">
+      <UniqueIdentifier>{39831746-41a2-45a4-9aba-ef99ff926fe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\05. Loading">
+      <UniqueIdentifier>{33667fab-27c6-46a6-bd66-8ba8021ce21a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main\01. Player">
+      <UniqueIdentifier>{e0b2f651-fd8f-456a-b0cc-9c565cf32f19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main\02. ESC">
+      <UniqueIdentifier>{aeed4501-ae3c-49e1-ba22-a011a18118a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main\03. Minimap">
+      <UniqueIdentifier>{83e55775-07b9-473f-a6f0-1942ce827922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main\02. ESC\01. Option">
+      <UniqueIdentifier>{692af02d-1eeb-4b8b-878d-51cd8fb7d319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main\03. Minimap\01. Widget">
+      <UniqueIdentifier>{7f79189a-fa70-42c8-9a11-1fef82a9ab91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main\04. Damage">
+      <UniqueIdentifier>{cf2cf142-4531-487b-9be2-c7834421aa2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\03. Main\05. Carving">
+      <UniqueIdentifier>{e542c2f8-028c-4a76-8666-3ac0f48fd422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\06. Camera">
+      <UniqueIdentifier>{022d688e-e30d-4959-bd21-fb08d1d8b6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Manager">
+      <UniqueIdentifier>{d943b108-a051-4c95-a571-293019fbe34b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Manager\01. Event">
+      <UniqueIdentifier>{b6d49fb1-2937-47c8-a3a6-f0eb49a78ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\06. HDR">
+      <UniqueIdentifier>{909d3901-b3f8-4dd6-9a82-618cc97dbe7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\07. Weapon\04. Billboard">
+      <UniqueIdentifier>{05aa71e2-0e25-441c-99d7-c08de5c1cb49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard\03. Fractal">
+      <UniqueIdentifier>{0ffa4a94-b4de-4ab7-a505-a99603f8978c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard\04. Smoke">
+      <UniqueIdentifier>{ead9c645-1d7c-44d7-b7a1-79bfa5570752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard\05. Fire">
+      <UniqueIdentifier>{3fd8583c-37a8-409b-b0ae-2fe13490f627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\10. Decal">
+      <UniqueIdentifier>{2831159c-4881-4565-915c-179de0c45ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard\06. Spark">
+      <UniqueIdentifier>{11328a2a-2d2a-47d1-aee8-b5ada9e77f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. Billboard\07. Explosion">
+      <UniqueIdentifier>{d876cc23-f233-438b-a0ee-fc8d43d11657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. Monster\05. Mernos">
+      <UniqueIdentifier>{3a7863c8-cbb2-4266-bf8e-70e19bbf50fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\06. HDR\01. Slider">
+      <UniqueIdentifier>{f8a699ec-252b-4bd9-87ca-2992959ea9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. SceneMode\03. Loading">
+      <UniqueIdentifier>{82cba7ac-c348-4906-a58d-703e899efbd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. UI\01. Window\07. Quest">
+      <UniqueIdentifier>{9f4b65f2-6398-4274-9b00-ef10866f999f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\Town">
+      <UniqueIdentifier>{12f89e40-8578-4f1f-94f2-9aadd7c1c4cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\Global">
+      <UniqueIdentifier>{35a9467b-736d-41f8-b35f-ab618788c69b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\Global\01. HealFlower">
+      <UniqueIdentifier>{82d6d11c-2900-4915-b57c-909a0b023a83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\Global\00. Stonej">
+      <UniqueIdentifier>{cdc41364-2059-42e0-8833-5e2c5a077496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\Global\02. Tent">
+      <UniqueIdentifier>{52cac4aa-7214-43b4-9962-897ce9042952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\Global\03. HealObj">
+      <UniqueIdentifier>{3fe53c86-42d1-4ba2-bd3c-7d10d8350055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\Global\04. SlidingBox">
+      <UniqueIdentifier>{11921a4f-8321-4cf8-b598-d9282e307546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage">
+      <UniqueIdentifier>{422b955f-0c2c-4d1c-8546-9834c2195564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\01. SmallTree">
+      <UniqueIdentifier>{904bf065-5cbe-40c6-97a3-a4dbeaca85b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\02. Tree">
+      <UniqueIdentifier>{29eebd4f-631a-47a8-a4bc-9d19e932a9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\03. BigTree">
+      <UniqueIdentifier>{cb0b9ebe-b5fa-47da-9bc8-06af49cc22d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\04. BrokenTree">
+      <UniqueIdentifier>{6cef233a-3cd1-4a95-aa60-39fc2fa1389d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\05. Mushroom">
+      <UniqueIdentifier>{6b5b6728-b97f-4786-9195-caec0ec6082b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\06. Grass">
+      <UniqueIdentifier>{1bbbf38f-549c-4f14-b032-c75706d1c2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\07. Vine">
+      <UniqueIdentifier>{3f946ee6-09c9-4c5d-9b3f-dc8fe7c038ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\08. Precipice">
+      <UniqueIdentifier>{5b1c6fe0-5594-4292-8223-8807c22f740b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\09. Sculpture">
+      <UniqueIdentifier>{8a4b6d13-ee94-4aa9-b6d9-b48309ceb3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\10. SmallStone">
+      <UniqueIdentifier>{ee2315a4-6ee1-45e8-955e-7a258cc9750b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\11. GrassRock">
+      <UniqueIdentifier>{e662ecc5-79b2-4b84-8c3d-a1bbee591bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\12. Wreck">
+      <UniqueIdentifier>{7829b519-71a9-460f-8d29-7731d7d31450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\13. SmallGrass">
+      <UniqueIdentifier>{e54c5f67-23a5-44ab-92a1-23059b687ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\1Stage\14. Far">
+      <UniqueIdentifier>{55c014fe-ed0c-4abe-b639-0fa7f231835a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage">
+      <UniqueIdentifier>{444cdf85-650e-441c-a915-caa4c6307e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\01. DesertPebble">
+      <UniqueIdentifier>{3e2ce091-a469-45f1-b547-f90f30755de0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\02. DesertSmallStone">
+      <UniqueIdentifier>{e727d5c6-6ceb-4645-a8d2-a60632aba1b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\03. DesertStone">
+      <UniqueIdentifier>{9e03d4a8-c4ac-4c68-abba-8d22f53270ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\04. DesertBigStone">
+      <UniqueIdentifier>{0754806d-ad0b-45d8-979a-9be240027651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\05. DesertRockWall">
+      <UniqueIdentifier>{62ee7b60-d318-4f18-b7db-490e1e7deb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\06. DesertStalactite">
+      <UniqueIdentifier>{5bc1a31e-9134-4a66-9c13-187f9b6833e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\07. DesertStalagmite">
+      <UniqueIdentifier>{b3061aca-2c6b-4dbc-8ad0-f6988e9131f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\03. Box">
+      <UniqueIdentifier>{0c754934-01c0-4fc3-ab49-95dfe0ec190d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. Field\2Stage\08. DesertMountain">
+      <UniqueIdentifier>{29021792-7c5e-477b-bf6e-3c2044190574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\03. Boss\02. Rathalos">
+      <UniqueIdentifier>{0d55b976-3944-4d0e-9e55-a1babe6ea1cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. SceneMode\04. Town">
+      <UniqueIdentifier>{dbd64bd7-d9d6-4d76-a919-c0c005214043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Manager\02. Object">
+      <UniqueIdentifier>{118c6483-7a6d-4301-b56f-e83f80a4c03d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client3D.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

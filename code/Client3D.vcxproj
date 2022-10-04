@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9c670454-43b5-4016-bad0-c099172e15d4}</ProjectGuid>
+    <RootNamespace>Client3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <IncludePath>../../Engine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <IncludePath>../../Engine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <IncludePath>../../Engine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <IncludePath>../../Engine/Include/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26812;26451;6029;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26812;26451;6029;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26812;26451;6029;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26812;26451;6029;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Client3D.h" />
+    <ClInclude Include="ClientManager3D.h" />
+    <ClInclude Include="Object\Anjanath.h" />
+    <ClInclude Include="Object\AnjanathAnimation.h" />
+    <ClInclude Include="Object\AnjanathTail.h" />
+    <ClInclude Include="Object\Arrow.h" />
+    <ClInclude Include="Object\ArrowExplosionEffect.h" />
+    <ClInclude Include="Object\ArrowHitEffect.h" />
+    <ClInclude Include="Object\ArrowLightEffect.h" />
+    <ClInclude Include="Object\ArrowSmokeEffect.h" />
+    <ClInclude Include="Object\ArrowStrongEffect.h" />
+    <ClInclude Include="Object\Barnos.h" />
+    <ClInclude Include="Object\BarnosAnimation.h" />
+    <ClInclude Include="Object\BigTree.h" />
+    <ClInclude Include="Object\Bow.h" />
+    <ClInclude Include="Object\BowBox.h" />
+    <ClInclude Include="Object\BowVfx.h" />
+    <ClInclude Include="Object\Box1.h" />
+    <ClInclude Include="Object\BrokenTree1.h" />
+    <ClInclude Include="Object\BrokenTree2.h" />
+    <ClInclude Include="Object\BrokenTree3.h" />
+    <ClInclude Include="Object\BurnedDecal.h" />
+    <ClInclude Include="Object\ChargingParticle.h" />
+    <ClInclude Include="Object\DesertBigStone.h" />
+    <ClInclude Include="Object\DesertMountain1.h" />
+    <ClInclude Include="Object\DesertMountain2.h" />
+    <ClInclude Include="Object\DesertPebble.h" />
+    <ClInclude Include="Object\DesertRockWall.h" />
+    <ClInclude Include="Object\DesertSmallStone.h" />
+    <ClInclude Include="Object\DesertStalactite1.h" />
+    <ClInclude Include="Object\DesertStalactite2.h" />
+    <ClInclude Include="Object\DesertStalactite3.h" />
+    <ClInclude Include="Object\DesertStalactite4.h" />
+    <ClInclude Include="Object\DesertStalagmite1.h" />
+    <ClInclude Include="Object\DesertStalagmite2.h" />
+    <ClInclude Include="Object\DesertStalagmite3.h" />
+    <ClInclude Include="Object\DesertStone1.h" />
+    <ClInclude Include="Object\DesertStone2.h" />
+    <ClInclude Include="Object\DesertStone3.h" />
+    <ClInclude Include="Object\DesertStone4.h" />
+    <ClInclude Include="Object\DesertStone5.h" />
+    <ClInclude Include="Object\DesertStone6.h" />
+    <ClInclude Include="Object\DragonArrow.h" />
+    <ClInclude Include="Object\EventManager.h" />
+    <ClInclude Include="Object\ExplosionEffect.h" />
+    <ClInclude Include="Object\Far.h" />
+    <ClInclude Include="Object\FieldObj.h" />
+    <ClInclude Include="Object\FireEffect.h" />
+    <ClInclude Include="Object\FlameEffect.h" />
+    <ClInclude Include="Object\FlightCamera.h" />
+    <ClInclude Include="Object\FSM.h" />
+    <ClInclude Include="Object\Grass1.h" />
+    <ClInclude Include="Object\Grass2.h" />
+    <ClInclude Include="Object\Grass3.h" />
+    <ClInclude Include="Object\Grass4.h" />
+    <ClInclude Include="Object\Grass5.h" />
+    <ClInclude Include="Object\Grass6.h" />
+    <ClInclude Include="Object\Grass7.h" />
+    <ClInclude Include="Object\Grass8.h" />
+    <ClInclude Include="Object\Grass9.h" />
+    <ClInclude Include="Object\GrassRock1.h" />
+    <ClInclude Include="Object\GrassRock2.h" />
+    <ClInclude Include="Object\GrassRock3.h" />
+    <ClInclude Include="Object\GrassRock4.h" />
+    <ClInclude Include="Object\GrassRock5.h" />
+    <ClInclude Include="Object\GrassRock6.h" />
+    <ClInclude Include="Object\GrassRock7.h" />
+    <ClInclude Include="Object\GrassRock8.h" />
+    <ClInclude Include="Object\GrassRock9.h" />
+    <ClInclude Include="Object\HealEffect.h" />
+    <ClInclude Include="Object\HealFlower.h" />
+    <ClInclude Include="Object\HealObject.h" />
+    <ClInclude Include="Object\HitBreathEffect.h" />
+    <ClInclude Include="Object\Jagras.h" />
+    <ClInclude Include="Object\JagrasAnimation.h" />
+    <ClInclude Include="Object\Kestodon.h" />
+    <ClInclude Include="Object\KestodonAnimation.h" />
+    <ClInclude Include="Object\LandScapeObj.h" />
+    <ClInclude Include="Object\Mernos.h" />
+    <ClInclude Include="Object\MernosAnimation.h" />
+    <ClInclude Include="Object\Monster.h" />
+    <ClInclude Include="Object\MushRoom1.h" />
+    <ClInclude Include="Object\MushRoom2.h" />
+    <ClInclude Include="Object\MushRoom3.h" />
+    <ClInclude Include="Object\NormalArrowBillboard.h" />
+    <ClInclude Include="Object\NormalArrowParticle.h" />
+    <ClInclude Include="Object\ObjectManager.h" />
+    <ClInclude Include="Object\ParticleAnimation.h" />
+    <ClInclude Include="Object\Player.h" />
+    <ClInclude Include="Object\PlayerAnimation.h" />
+    <ClInclude Include="Object\Precipice.h" />
+    <ClInclude Include="Object\Precipice2.h" />
+    <ClInclude Include="Object\Rathalos.h" />
+    <ClInclude Include="Object\RathalosAnimation.h" />
+    <ClInclude Include="Object\RathalosTail.h" />
+    <ClInclude Include="Object\RockFractalParticle.h" />
+    <ClInclude Include="Object\Sculpture.h" />
+    <ClInclude Include="Object\SlidingBox.h" />
+    <ClInclude Include="Object\SmallGrass.h" />
+    <ClInclude Include="Object\SmallStone1.h" />
+    <ClInclude Include="Object\SmallTree1.h" />
+    <ClInclude Include="Object\SmallTree2.h" />
+    <ClInclude Include="Object\SmallTree3.h" />
+    <ClInclude Include="Object\SmallTree4.h" />
+    <ClInclude Include="Object\SmallTree5.h" />
+    <ClInclude Include="Object\SmokeEffect.h" />
+    <ClInclude Include="Object\SparkEffect.h" />
+    <ClInclude Include="Object\Stonej\Stonej1.h" />
+    <ClInclude Include="Object\Stonej\Stonej10.h" />
+    <ClInclude Include="Object\Stonej\Stonej11.h" />
+    <ClInclude Include="Object\Stonej\Stonej12.h" />
+    <ClInclude Include="Object\Stonej\Stonej13.h" />
+    <ClInclude Include="Object\Stonej\Stonej14.h" />
+    <ClInclude Include="Object\Stonej\Stonej15.h" />
+    <ClInclude Include="Object\Stonej\Stonej16.h" />
+    <ClInclude Include="Object\Stonej\Stonej17.h" />
+    <ClInclude Include="Object\Stonej\Stonej18.h" />
+    <ClInclude Include="Object\Stonej\Stonej19.h" />
+    <ClInclude Include="Object\Stonej\Stonej2.h" />
+    <ClInclude Include="Object\Stonej\Stonej20.h" />
+    <ClInclude Include="Object\Stonej\Stonej21.h" />
+    <ClInclude Include="Object\Stonej\Stonej22.h" />
+    <ClInclude Include="Object\Stonej\Stonej23.h" />
+    <ClInclude Include="Object\Stonej\Stonej24.h" />
+    <ClInclude Include="Object\Stonej\Stonej25.h" />
+    <ClInclude Include="Object\Stonej\Stonej26.h" />
+    <ClInclude Include="Object\Stonej\Stonej27.h" />
+    <ClInclude Include="Object\Stonej\Stonej28.h" />
+    <ClInclude Include="Object\Stonej\Stonej29.h" />
+    <ClInclude Include="Object\Stonej\Stonej3.h" />
+    <ClInclude Include="Object\Stonej\Stonej30.h" />
+    <ClInclude Include="Object\Stonej\Stonej31.h" />
+    <ClInclude Include="Object\Stonej\Stonej32.h" />
+    <ClInclude Include="Object\Stonej\Stonej33.h" />
+    <ClInclude Include="Object\Stonej\Stonej34.h" />
+    <ClInclude Include="Object\Stonej\Stonej35.h" />
+    <ClInclude Include="Object\Stonej\Stonej36.h" />
+    <ClInclude Include="Object\Stonej\Stonej37.h" />
+    <ClInclude Include="Object\Stonej\Stonej4.h" />
+    <ClInclude Include="Object\Stonej\Stonej5.h" />
+    <ClInclude Include="Object\Stonej\Stonej6.h" />
+    <ClInclude Include="Object\Stonej\Stonej7.h" />
+    <ClInclude Include="Object\Stonej\Stonej8.h" />
+    <ClInclude Include="Object\Stonej\Stonej9.h" />
+    <ClInclude Include="Object\StrongArrowParticle.h" />
+    <ClInclude Include="Object\TargetingCamera.h" />
+    <ClInclude Include="Object\Tent1.h" />
+    <ClInclude Include="Object\Tent2.h" />
+    <ClInclude Include="Object\TestObj.h" />
+    <ClInclude Include="Object\TownBarrel.h" />
+    <ClInclude Include="Object\TownCarriage.h" />
+    <ClInclude Include="Object\TownCheckPoint.h" />
+    <ClInclude Include="Object\TownDragonHead.h" />
+    <ClInclude Include="Object\TownPassage.h" />
+    <ClInclude Include="Object\TownPumpkinMan.h" />
+    <ClInclude Include="Object\TownRampart.h" />
+    <ClInclude Include="Object\TownShadeScreen.h" />
+    <ClInclude Include="Object\TownSign.h" />
+    <ClInclude Include="Object\TownStructure.h" />
+    <ClInclude Include="Object\TownSummerHouse.h" />
+    <ClInclude Include="Object\TownTunnel.h" />
+    <ClInclude Include="Object\Tree1.h" />
+    <ClInclude Include="Object\Tree2.h" />
+    <ClInclude Include="Object\Tree3.h" />
+    <ClInclude Include="Object\Tree4.h" />
+    <ClInclude Include="Object\Tree5.h" />
+    <ClInclude Include="Object\Tree6.h" />
+    <ClInclude Include="Object\Tree7.h" />
+    <ClInclude Include="Object\Tree8.h" />
+    <ClInclude Include="Object\Tree9.h" />
+    <ClInclude Include="Object\Vespoid.h" />
+    <ClInclude Include="Object\VespoidAnimation.h" />
+    <ClInclude Include="Object\Vine.h" />
+    <ClInclude Include="Object\Vine2.h" />
+    <ClInclude Include="Object\Vine3.h" />
+    <ClInclude Include="Object\Vine4.h" />
+    <ClInclude Include="Object\Vine5.h" />
+    <ClInclude Include="Object\Weapon.h" />
+    <ClInclude Include="Object\WeaponAnimation.h" />
+    <ClInclude Include="Object\Wreck1.h" />
+    <ClInclude Include="Scene\LoadingSceneMode.h" />
+    <ClInclude Include="Scene\LoadingThread.h" />
+    <ClInclude Include="Scene\MainSceneMode.h" />
+    <ClInclude Include="Scene\StartSceneMode.h" />
+    <ClInclude Include="Scene\TownSceneMode.h" />
+    <ClInclude Include="UI\BloomScaleSlider.h" />
+    <ClInclude Include="UI\BloomThresholdSlider.h" />
+    <ClInclude Include="UI\BottleSlotWindow.h" />
+    <ClInclude Include="UI\CarvingRightWindow.h" />
+    <ClInclude Include="UI\CarvingWindow.h" />
+    <ClInclude Include="UI\ChargingJoomMouse.h" />
+    <ClInclude Include="UI\ClickMouse.h" />
+    <ClInclude Include="UI\DamageFont.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="UI\DebugWindow.h" />
+    <ClInclude Include="UI\ESCWindow.h" />
+    <ClInclude Include="UI\ExplainWindow.h" />
+    <ClInclude Include="UI\FarStartSlider.h" />
+    <ClInclude Include="UI\GreySlider.h" />
+    <ClInclude Include="UI\HDRWindow.h" />
+    <ClInclude Include="UI\JoomMouse.h" />
+    <ClInclude Include="UI\LoadingWindow.h" />
+    <ClInclude Include="UI\MainWindow.h" />
+    <ClInclude Include="UI\Minimap.h" />
+    <ClInclude Include="UI\MinimapWindow.h" />
+    <ClInclude Include="UI\NearStartSlider.h" />
+    <ClInclude Include="UI\NormalMouse.h" />
+    <ClInclude Include="UI\OptionWindow.h" />
+    <ClInclude Include="UI\PlayerHUD.h" />
+    <ClInclude Include="UI\QuestSubWindow1.h" />
+    <ClInclude Include="UI\QuestSubWindow2.h" />
+    <ClInclude Include="UI\QuestWindow.h" />
+    <ClInclude Include="UI\StartWindow.h" />
+    <ClInclude Include="UI\WhiteSlider.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client3D.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientManager3D.cpp" />
+    <ClCompile Include="main3D.cpp" />
+    <ClCompile Include="Object\Anjanath.cpp" />
+    <ClCompile Include="Object\AnjanathAnimation.cpp" />
+    <ClCompile Include="Object\AnjanathTail.cpp" />
+    <ClCompile Include="Object\Arrow.cpp" />
+    <ClCompile Include="Object\ArrowExplosionEffect.cpp" />
+    <ClCompile Include="Object\ArrowHitEffect.cpp" />
+    <ClCompile Include="Object\ArrowLightEffect.cpp" />
+    <ClCompile Include="Object\ArrowSmokeEffect.cpp" />
+    <ClCompile Include="Object\ArrowStrongEffect.cpp" />
+    <ClCompile Include="Object\Barnos.cpp" />
+    <ClCompile Include="Object\BarnosAnimation.cpp" />
+    <ClCompile Include="Object\BarnosState.cpp" />
+    <ClCompile Include="Object\BigTree.cpp" />
+    <ClCompile Include="Object\Bow.cpp" />
+    <ClCompile Include="Object\BowBox.cpp" />
+    <ClCompile Include="Object\BowVfx.cpp" />
+    <ClCompile Include="Object\Box1.cpp" />
+    <ClCompile Include="Object\BrokenTree1.cpp" />
+    <ClCompile Include="Object\BrokenTree2.cpp" />
+    <ClCompile Include="Object\BrokenTree3.cpp" />
+    <ClCompile Include="Object\BurnedDecal.cpp" />
+    <ClCompile Include="Object\ChargingParticle.cpp" />
+    <ClCompile Include="Object\DesertBigStone.cpp" />
+    <ClCompile Include="Object\DesertMountain1.cpp" />
+    <ClCompile Include="Object\DesertMountain2.cpp" />
+    <ClCompile Include="Object\DesertPebble.cpp" />
+    <ClCompile Include="Object\DesertRockWall.cpp" />
+    <ClCompile Include="Object\DesertSmallStone.cpp" />
+    <ClCompile Include="Object\DesertStalactite1.cpp" />
+    <ClCompile Include="Object\DesertStalactite2.cpp" />
+    <ClCompile Include="Object\DesertStalactite3.cpp" />
+    <ClCompile Include="Object\DesertStalactite4.cpp" />
+    <ClCompile Include="Object\DesertStalagmite1.cpp" />
+    <ClCompile Include="Object\DesertStalagmite2.cpp" />
+    <ClCompile Include="Object\DesertStalagmite3.cpp" />
+    <ClCompile Include="Object\DesertStone1.cpp" />
+    <ClCompile Include="Object\DesertStone2.cpp" />
+    <ClCompile Include="Object\DesertStone3.cpp" />
+    <ClCompile Include="Object\DesertStone4.cpp" />
+    <ClCompile Include="Object\DesertStone5.cpp" />
+    <ClCompile Include="Object\DesertStone6.cpp" />
+    <ClCompile Include="Object\DragonArrow.cpp" />
+    <ClCompile Include="Object\EventManager.cpp" />
+    <ClCompile Include="Object\ExplosionEffect.cpp" />
+    <ClCompile Include="Object\Far.cpp" />
+    <ClCompile Include="Object\FieldObj.cpp" />
+    <ClCompile Include="Object\FireEffect.cpp" />
+    <ClCompile Include="Object\FlameEffect.cpp" />
+    <ClCompile Include="Object\FlightCamera.cpp" />
+    <ClCompile Include="Object\Grass1.cpp" />
+    <ClCompile Include="Object\Grass2.cpp" />
+    <ClCompile Include="Object\Grass3.cpp" />
+    <ClCompile Include="Object\Grass4.cpp" />
+    <ClCompile Include="Object\Grass5.cpp" />
+    <ClCompile Include="Object\Grass6.cpp" />
+    <ClCompile Include="Object\Grass7.cpp" />
+    <ClCompile Include="Object\Grass8.cpp" />
+    <ClCompile Include="Object\Grass9.cpp" />
+    <ClCompile Include="Object\GrassRock1.cpp" />
+    <ClCompile Include="Object\GrassRock2.cpp" />
+    <ClCompile Include="Object\GrassRock3.cpp" />
+    <ClCompile Include="Object\GrassRock4.cpp" />
+    <ClCompile Include="Object\GrassRock5.cpp" />
+    <ClCompile Include="Object\GrassRock6.cpp" />
+    <ClCompile Include="Object\GrassRock7.cpp" />
+    <ClCompile Include="Object\GrassRock8.cpp" />
+    <ClCompile Include="Object\GrassRock9.cpp" />
+    <ClCompile Include="Object\HealEffect.cpp" />
+    <ClCompile Include="Object\HealFlower.cpp" />
+    <ClCompile Include="Object\HealObject.cpp" />
+    <ClCompile Include="Object\HitBreathEffect.cpp" />
+    <ClCompile Include="Object\Jagras.cpp" />
+    <ClCompile Include="Object\JagrasAnimation.cpp" />
+    <ClCompile Include="Object\JagrasState.cpp" />
+    <ClCompile Include="Object\Kestodon.cpp" />
+    <ClCompile Include="Object\KestodonAnimation.cpp" />
+    <ClCompile Include="Object\KestodonState.cpp" />
+    <ClCompile Include="Object\LandScapeObj.cpp" />
+    <ClCompile Include="Object\Mernos.cpp" />
+    <ClCompile Include="Object\MernosAnimation.cpp" />
+    <ClCompile Include="Object\MernosState.cpp" />
+    <ClCompile Include="Object\Monster.cpp" />
+    <ClCompile Include="Object\MushRoom1.cpp" />
+    <ClCompile Include="Object\MushRoom2.cpp" />
+    <ClCompile Include="Object\MushRoom3.cpp" />
+    <ClCompile Include="Object\NormalArrowBillboard.cpp" />
+    <ClCompile Include="Object\NormalArrowParticle.cpp" />
+    <ClCompile Include="Object\ObjectManager.cpp" />
+    <ClCompile Include="Object\ParticleAnimation.cpp" />
+    <ClCompile Include="Object\Player.cpp" />
+    <ClCompile Include="Object\PlayerAnimation.cpp" />
+    <ClCompile Include="Object\Precipice.cpp" />
+    <ClCompile Include="Object\Precipice2.cpp" />
+    <ClCompile Include="Object\Rathalos.cpp" />
+    <ClCompile Include="Object\RathalosAnimation.cpp" />
+    <ClCompile Include="Object\RathalosTail.cpp" />
+    <ClCompile Include="Object\RockFractalParticle.cpp" />
+    <ClCompile Include="Object\Sculpture.cpp" />
+    <ClCompile Include="Object\SlidingBox.cpp" />
+    <ClCompile Include="Object\SmallGrass.cpp" />
+    <ClCompile Include="Object\SmallStone1.cpp" />
+    <ClCompile Include="Object\SmallTree1.cpp" />
+    <ClCompile Include="Object\SmallTree2.cpp" />
+    <ClCompile Include="Object\SmallTree3.cpp" />
+    <ClCompile Include="Object\SmallTree4.cpp" />
+    <ClCompile Include="Object\SmallTree5.cpp" />
+    <ClCompile Include="Object\SmokeEffect.cpp" />
+    <ClCompile Include="Object\SparkEffect.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej1.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej10.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej11.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej12.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej13.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej14.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej15.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej16.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej17.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej18.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej19.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej2.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej20.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej21.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej22.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej23.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej24.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej25.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej26.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej27.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej28.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej29.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej3.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej30.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej31.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej32.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej33.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej34.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej35.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej36.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej37.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej4.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej5.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej6.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej7.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej8.cpp" />
+    <ClCompile Include="Object\Stonej\Stonej9.cpp" />
+    <ClCompile Include="Object\StrongArrowParticle.cpp" />
+    <ClCompile Include="Object\TargetingCamera.cpp" />
+    <ClCompile Include="Object\Tent1.cpp" />
+    <ClCompile Include="Object\Tent2.cpp" />
+    <ClCompile Include="Object\TestObj.cpp" />
+    <ClCompile Include="Object\TownBarrel.cpp" />
+    <ClCompile Include="Object\TownCarriage.cpp" />
+    <ClCompile Include="Object\TownCheckPoint.cpp" />
+    <ClCompile Include="Object\TownDragonHead.cpp" />
+    <ClCompile Include="Object\TownPassage.cpp" />
+    <ClCompile Include="Object\TownPumpkinMan.cpp" />
+    <ClCompile Include="Object\TownRampart.cpp" />
+    <ClCompile Include="Object\TownShadeScreen.cpp" />
+    <ClCompile Include="Object\TownSign.cpp" />
+    <ClCompile Include="Object\TownStructure.cpp" />
+    <ClCompile Include="Object\TownSummerHouse.cpp" />
+    <ClCompile Include="Object\TownTunnel.cpp" />
+    <ClCompile Include="Object\Tree1.cpp" />
+    <ClCompile Include="Object\Tree2.cpp" />
+    <ClCompile Include="Object\Tree3.cpp" />
+    <ClCompile Include="Object\Tree4.cpp" />
+    <ClCompile Include="Object\Tree5.cpp" />
+    <ClCompile Include="Object\Tree6.cpp" />
+    <ClCompile Include="Object\Tree7.cpp" />
+    <ClCompile Include="Object\Tree8.cpp" />
+    <ClCompile Include="Object\Tree9.cpp" />
+    <ClCompile Include="Object\Vespoid.cpp" />
+    <ClCompile Include="Object\VespoidAnimation.cpp" />
+    <ClCompile Include="Object\VespoidState.cpp" />
+    <ClCompile Include="Object\Vine.cpp" />
+    <ClCompile Include="Object\Vine2.cpp" />
+    <ClCompile Include="Object\Vine3.cpp" />
+    <ClCompile Include="Object\Vine4.cpp" />
+    <ClCompile Include="Object\Vine5.cpp" />
+    <ClCompile Include="Object\Weapon.cpp" />
+    <ClCompile Include="Object\WeaponAnimation.cpp" />
+    <ClCompile Include="Object\Wreck1.cpp" />
+    <ClCompile Include="Scene\LoadingSceneMode.cpp" />
+    <ClCompile Include="Scene\LoadingThread.cpp" />
+    <ClCompile Include="Scene\MainSceneMode.cpp" />
+    <ClCompile Include="Scene\MainScene_LoadSceneFile.cpp" />
+    <ClCompile Include="Scene\StartSceneMode.cpp" />
+    <ClCompile Include="Scene\TownSceneMode.cpp" />
+    <ClCompile Include="Scene\TownScene_LoadSceneFile.cpp" />
+    <ClCompile Include="UI\BloomScaleSlider.cpp" />
+    <ClCompile Include="UI\BloomThresholdSlider.cpp" />
+    <ClCompile Include="UI\BottleSlotWindow.cpp" />
+    <ClCompile Include="UI\CarvingRightWindow.cpp" />
+    <ClCompile Include="UI\CarvingWindow.cpp" />
+    <ClCompile Include="UI\ChargingJoomMouse.cpp" />
+    <ClCompile Include="UI\ClickMouse.cpp" />
+    <ClCompile Include="UI\DamageFont.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="UI\DebugWindow.cpp" />
+    <ClCompile Include="UI\ESCWindow.cpp" />
+    <ClCompile Include="UI\ExplainWindow.cpp" />
+    <ClCompile Include="UI\FarStartSlider.cpp" />
+    <ClCompile Include="UI\GreySlider.cpp" />
+    <ClCompile Include="UI\HDRWindow.cpp" />
+    <ClCompile Include="UI\JoomMouse.cpp" />
+    <ClCompile Include="UI\LoadingWindow.cpp" />
+    <ClCompile Include="UI\MainWindow.cpp" />
+    <ClCompile Include="UI\Minimap.cpp" />
+    <ClCompile Include="UI\MinimapWindow.cpp" />
+    <ClCompile Include="UI\NearStartSlider.cpp" />
+    <ClCompile Include="UI\NormalMouse.cpp" />
+    <ClCompile Include="UI\OptionWindow.cpp" />
+    <ClCompile Include="UI\PlayerHUD.cpp" />
+    <ClCompile Include="UI\QuestSubWindow1.cpp" />
+    <ClCompile Include="UI\QuestSubWindow2.cpp" />
+    <ClCompile Include="UI\QuestWindow.cpp" />
+    <ClCompile Include="UI\StartWindow.cpp" />
+    <ClCompile Include="UI\WhiteSlider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GameEngine\Include\GameEngine.vcxproj">
+      <Project>{6aebf8c5-6304-4b0f-b2a4-3208a366bb25}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
